@@ -163,12 +163,11 @@ label a {
 .banner-bg{
   margin: 0;
   padding: 0;
-  height: 100vh;
   text-align: center;
 }
 .banner-bg img{
-  height: 100%;
   width: 100%;
+  height: 95vh;
 }
 .first-banner-txtBox{
   position: absolute;
@@ -234,6 +233,7 @@ label a {
 /* article 영역 */
 #page2_wrapper{
   background: #0047a4;
+  margin-top: -7.5px;
 }
 article{
   width: 1200px;
@@ -282,8 +282,8 @@ article{
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  height: 400px;
-  margin-top: 100px;
+  height: 480px;
+  margin-top: 90px;
 }
 .box-trigger li:nth-child(1):hover{
   background: rgb(0,212,255);
@@ -301,6 +301,7 @@ background: linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(2,0,36,0) 100%);
 .box-trigger li{
   width: 400px;
   text-align: center;
+  
 }
 .box-trigger li:nth-child(1),
 .box-trigger li:nth-child(3){
@@ -314,18 +315,22 @@ background: linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(2,0,36,0) 100%);
 .box-trigger li h1{
   font-size: 30px;
   margin-bottom: 15px;
+  margin-top: 50px;
 }
 .box-trigger li p{
   font-size: 14px;
   font-weight: 100;
   color: #a5a5a5;
-  margin-bottom: 500px;
 }
-
+.box-trigger li img{
+  width: 20%;
+  position: relative;
+}
 .main-bg img{
   width: 100%;
   position: absolute;
   margin-top: -200px;
+  height: 900px;
 }
 .main-txt{
 position: relative;
@@ -342,4 +347,54 @@ position: relative;
   color: #a5a5a5;
   font-weight: 300;
   margin-top: 50px;
+}
+
+/* 슬라이더 부분 */
+
+
+footer{
+  height: 30vh;
+  position: relative;
+}
+.main-slider{
+  height: 750px;
+  width: 70%;
+  position: relative;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -40,3 +40,11 @@ function hasScrolled() {
     // lastScrollTop 에 현재 스크롤위치를 지정한다.
     lastScrollTop = st;
 }
+
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
